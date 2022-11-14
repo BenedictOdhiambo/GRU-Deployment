@@ -23,7 +23,7 @@ import numpy as np
 # In[3]:
 
 
-model = pickle.load(open('./GRU.pkl','rb'))
+model = pickle.load(open('./gru.pkl','rb'))
 def predict_Airpassengers(Timestamp): 
     prediction = model.predict('Timestamp')
     return prediction
