@@ -32,16 +32,8 @@ def predict_Airpassengers(timestamp):
 
 def main():
     st.title("Air Passengers Predictor")
-    html_time = """
-    <div style="background-color:#025246 ;padding:10px">
-    <h2 style="color:white;text-align:center;">Air Passengers Prediction App </h2>
-    </div>
-    """
-    timestamp = st.text_input("Timestamp","Type Here")
-    safe_html="""  
-    """
     st.header('Enter the timestamp:')
-    Timestamp = st.number_input('Timestamp:', min_value=1, max_value=1000, value=1)
+    timestamp = st.number_input('timestamp:', min_value=1, max_value=1000, value=1)
     result=""
     if st.button("Predict Passengers"):
         output = predict_Airpassengers(timestamp)
