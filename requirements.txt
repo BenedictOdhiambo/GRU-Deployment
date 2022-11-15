@@ -4,5 +4,4 @@ scikit-learn
 matplotlib
 pandas
 streamlit
-tensorflow
 python >=3.7
