@@ -12,7 +12,8 @@
 import streamlit as st
 import pickle
 import numpy as np
-model = open('gru.pkl','rb')
+from keras.models import load_model
+model = load_model('gru.h5')
 
 
 # In[2]:
