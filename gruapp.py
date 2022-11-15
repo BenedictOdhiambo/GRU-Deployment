@@ -12,7 +12,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-model = open('./model.pkl','rb')
+model = pickle.load(open('gru.pkl','rb'))
 
 
 # In[2]:
