@@ -41,7 +41,7 @@ from keras.callbacks import EarlyStopping
 
 
 # Load the dataset
-Data=pd.read_csv('D:\Ben Important\Master Data Analytics\MSC 2.1 Notes\Data Analytics and Knowledge Engineering\AirPassengers.csv', usecols=[1])
+Data=pd.read_csv('AirPassengers.csv', usecols=[1])
 Data.tail()
 
 
