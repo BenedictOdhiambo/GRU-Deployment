@@ -40,7 +40,6 @@ from typing_extensions import TypeGuard
 
 import streamlit as st
 st.title('Air Passengers Predictor')
-st.image('D:\Ben Important\Master Data Analytics\MSC 2.1 Notes\Data Analytics and Knowledge Engineering\Kenya-Airways-celebrates-inaugural-U.S.-flight.png')
 st.header('Enter the Timestamp:')
 Timestamp = st.number_input('Timestamp:', min_value=1, max_value=1000, value=1)
 if st.button('Predict Passengers'):
