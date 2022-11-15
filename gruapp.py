@@ -32,11 +32,11 @@ def predict_Airpassengers(timestamp):
 
 def main():
     st.title("Air Passengers Predictor")
-    st.header('Enter the Timestamp:')
+    st.header('Enter the timestamp:')
     Timestamp = st.number_input('Timestamp:', min_value=1, max_value=1000, value=1)
     result=""
     if st.button("Predict Passengers"):
-        output = predict_Airpassengers(Timestamp)
+        output = predict_Airpassengers(timestamp)
         st.success('The output is {}'.format(output))
 if __name__=='__main__':
     main()
