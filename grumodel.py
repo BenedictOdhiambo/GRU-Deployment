@@ -471,7 +471,7 @@ import pickle
 # In[35]:
 
 
-pickle.dump(gru,open('model.pkl','wb'))
+pickle.dump(gru,open('gru.pkl','wb'))
 
 
 # In[ ]:
