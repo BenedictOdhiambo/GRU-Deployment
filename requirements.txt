@@ -9,3 +9,4 @@ tensorboard-plugin-wit
 tensorflow
 tensorflow-estimator
 scipy
+h5py
