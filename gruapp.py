@@ -13,7 +13,8 @@ import streamlit as st
 import pickle
 import numpy as np
 from keras.models import load_model
-model = load_model('gru.h5')
+savedModel=load_model('gru_model.h5')
+savedModel.summary()
 
 
 # In[2]:
