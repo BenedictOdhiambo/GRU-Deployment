@@ -24,7 +24,7 @@ def welcome():
     return "Deployment of GRU Model"
 def predict_Airpassengers(timestamp): 
     input=np.int(timestamp)
-    prediction = model.predict(input)
+    prediction = savedModel.predict(input)
     print(Prediction)
     return Prediction
 
