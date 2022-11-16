@@ -471,7 +471,7 @@ import pickle
 # In[35]:
 
 
-model.save("gru.h5")
+gru.save('gru_model.h5')
 
 
 # In[ ]:
