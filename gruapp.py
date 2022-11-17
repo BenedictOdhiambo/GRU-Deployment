@@ -36,8 +36,7 @@ def main():
     st.title("Air Passengers Predictor")
     st.header('Enter the timestamp:')
     timestamp = st.number_input('timestamp:', min_value=1, max_value=1000, value=1)
-    output=""
-    return output
+    return Prediction
 
 
 
