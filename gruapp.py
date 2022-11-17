@@ -40,6 +40,7 @@ def main():
     st.button("Predict Passengers")
     output = predict_Airpassengers(timestamp)
     st.success('The output is ;'.format(output))
+if __name__ == "__main__":
     main()
 
 
