@@ -22,18 +22,13 @@ savedModel.summary()
 
 def welcome():
     return "Deployment of GRU Model"
-def predict_Airpassengers(timestamp): 
-    input=np.int(timestamp)
-    prediction = savedModel.predict(input)
-    print(Prediction)
-    return Prediction
 def main():
     st.title("Air Passengers Predictor")
     st.header('Enter the timestamp:')
     timestamp = st.number_input('timestamp:', min_value=1, max_value=1000, value=1)
     if st.button('Predict Passengers'):
-        Passengers = predict_Airpassengers(timestamp)
-        st.success(f'The predicted number of passengers is ${Prediction[0]:.2f}')
+        prediction = savedModel.predict(timestamp)
+        st.success(f'The predicted number of passengers is ${prediction[0]:.2f}')
 if __name__=='__main__': 
     main() 
 
