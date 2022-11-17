@@ -37,7 +37,7 @@ def main():
     st.header('Enter the timestamp:')
     timestamp = st.number_input('timestamp:', min_value=1, max_value=1000, value=1)
     output=""
-    if st.button("Predict Passengers")
+    if st.button("Predict Passengers"):
         output = predict_Airpassengers(timestamp)
         st.text(output[0])
 if __name__ == "__main__":
