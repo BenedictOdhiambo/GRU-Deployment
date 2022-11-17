@@ -27,18 +27,14 @@ def predict_Airpassengers(timestamp):
     prediction = savedModel.predict(input)
     print(Prediction)
     return Prediction
-
-
-# In[3]:
-
-
 def main():
     st.title("Air Passengers Predictor")
     st.header('Enter the timestamp:')
     timestamp = st.number_input('timestamp:', min_value=1, max_value=1000, value=1)
 if st.button('Predict Passengers'):
     Passengers = predict_Airpassengers(timestamp)
-    st.success(f'The predicted number of passengers is ${passengers[0]:.2f}')
+    st.success(f'The predicted number of passengers is ${Passengers[0]:.2f}')
+    
 
 
 
