@@ -19,9 +19,6 @@ savedModel.summary()
 
 # In[2]:
 
-
-def welcome():
-    return "Deployment of GRU Model"
 def main():
     st.title("Air Passengers Predictor")
     st.header('Enter the timestamp:')
