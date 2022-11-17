@@ -40,8 +40,7 @@ def main():
     if st.button("Predict Passengers"):
         output = predict_Airpassengers(timestamp)
         st.text(output[0])
-if __name__ == "__main__":
-    main()
+
 
 
 
