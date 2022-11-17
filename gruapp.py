@@ -25,7 +25,7 @@ def main():
     timestamp = st.number_input('timestamp:', min_value=1, max_value=1000, value=1)
     if st.button('Predict Passengers'):
        st.code(savedModel.predict(timestamp))
-        st.success(f'The predicted number of passengers is ${prediction[0]:.2f}')
+       st.success(f'The predicted number of passengers is ${prediction[0]:.2f}')
 if __name__=='__main__': 
     main() 
 
